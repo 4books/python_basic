@@ -84,3 +84,5 @@ result = a.pop('B')
 print(a)
 print(result)
 
+if __name__ == '__main__':
+    print('start')
