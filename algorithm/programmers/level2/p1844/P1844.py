@@ -20,7 +20,7 @@ def solution(maps):
 
             if maps[nrow][ncol] == 1 or maps[nrow][ncol] > d + 1:
                 maps[nrow][ncol] = d + 1
-                if nrow == max_r -1 and ncol == max_c - 1:
+                if nrow == max_r - 1 and ncol == max_c - 1:
                     return d + 1
 
                 queue.append((nrow, ncol, d + 1))
@@ -29,5 +29,5 @@ def solution(maps):
 
 
 if __name__ == '__main__':
-    i = solution(None)
+    i = solution([[1, 0, 1, 1, 1], [1, 0, 1, 0, 1], [1, 0, 1, 1, 1], [1, 1, 1, 0, 1], [0, 0, 0, 0, 1]])
     print(i)
